@@ -1,2 +1,3 @@
 # pdf_tools
-Random PDF generation tools
+
+Needs FPDF - pip install 
