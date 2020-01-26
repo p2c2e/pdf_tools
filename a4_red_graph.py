@@ -8,14 +8,14 @@ def draw_lines():
     margin=10
     width=pdf.w
     height=pdf.h
-    for i in range(0,(int) (width-2*margin)):
+    for i in range(0,(int) (width-2*margin+1)):
         pdf.line(margin+i, margin, margin+i, (int) (height-margin))
-    for i in range(0,(int) (height-2*margin)):
+    for i in range(0,(int) (height-2*margin+1)):
         pdf.line(margin, margin+i, (int) (width-margin), margin+i)
     pdf.set_line_width(0.15)
-    for i in range(0,(int) (width-2*margin),10):
+    for i in range(0,(int) (width-2*margin+1),10):
         pdf.line(margin+i, margin, margin+i, (int) (height-margin))
-    for i in range(0,(int) (height-2*margin),10):
+    for i in range(0,(int) (height-2*margin+1),10):
         pdf.line(margin, margin+i, (int) (width-margin), margin+i)
     pdf.output('a4_red.pdf')
  
